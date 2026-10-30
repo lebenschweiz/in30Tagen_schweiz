@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aufnahme-Check: In 90 Tagen in die Schweiz | Lebenplus</title>
+  <meta name="description" content="90 Tage bis Job-Zusage, Wohnung und Anmeldung. Das Programm kostet 1.950 CHF. Wer aufgenommen wird, entscheidet ein 30-minütiger Aufnahme-Check." />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#0B0B0D" />
+  <link rel="canonical" href="https://lebenplus-community.ch/bewerbung" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Lebenplus" />
+  <meta property="og:title" content="In 90 Tagen in die Schweiz. Wir nehmen nicht jeden auf." />
+  <meta property="og:description" content="Job-Zusage, Wohnung, Anmeldung, Krankenkasse in 90 Tagen. 1.950 CHF. Wer aufgenommen wird, entscheidet ein 30-minütiger Aufnahme-Check." />
+  <meta property="og:url" content="https://lebenplus-community.ch/bewerbung" />
+  <meta property="og:image" content="https://lebenplus-community.ch/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    // Anbindung Formular und Terminbuchung. Beide Werte vor dem Livegang eintragen.
+    window.LP_CONFIG = {
+      // URL, an die der Antrag als JSON (POST) geschickt wird, z.B. Formspree, Make, Zapier oder Brevo-Webhook
+      formEndpoint: "",
+      // Einbettbare Kalender-URL für die Terminwahl, z.B. https://calendly.com/lebenplus/aufnahme-check
+      calendarUrl: ""
+    };
+  </script>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Lebenplus Startseite">
+        <img src="wordmark.png" alt="Lebenplus" onerror="this.replaceWith(document.getElementById('brand-fallback').content.cloneNode(true))" />
+      </a>
+      <template id="brand-fallback"><span class="brand-mark" aria-hidden="true">+</span><span class="brand-text">Leben<span>plus</span></span></template>
+      <a class="btn btn-primary btn-sm magnetic" href="#bewerben">Aufnahme-Check beantragen <span class="arrow">→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Aufnahme-Check · Auswandern in die Schweiz</span>
+          <h1>
+            <span class="line"><span>In 90 Tagen in die Schweiz.</span></span>
+            <span class="line"><span class="accent">Wir nehmen nicht jeden auf.</span></span>
+          </h1>
+          <p class="hero-lead reveal" style="--d:.25s">
+            Ziel am Tag 90: <strong>Job-Zusage, Wohnung, Anmeldung und Krankenkasse geklärt.</strong>
+            Das Programm kostet 1.950 CHF. Wer aufgenommen wird, entscheidet ein 30-minütiger Aufnahme-Check.
+          </p>
+          <div class="hero-cta reveal" style="--d:.35s">
+            <a class="btn btn-primary btn-lg magnetic" href="#bewerben">Aufnahme-Check beantragen <span class="arrow">→</span></a>
+            <div class="hero-meta">
+              <span>30 Minuten</span><span>Programm 1.950 CHF</span><span>Ablehnung ist möglich</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-card reveal tilt" style="--d:.45s" aria-label="Ziel am Tag 90">
+          <div class="journey-head">
+            <span class="journey-label">Dein Weg</span>
+            <span class="journey-day">Tag <span id="day-count">0</span><small>/ 90</small></span>
+          </div>
+          <div class="journey-bar" aria-hidden="true"><span id="day-bar"></span></div>
+          <ul class="journey-list">
+            <li data-day="45"><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Job-Zusage<span class="tag">Tag 31–60</span></li>
+            <li data-day="66"><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Wohnung<span class="tag">Tag 61–90</span></li>
+            <li data-day="78"><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Anmeldung<span class="tag">Tag 61–90</span></li>
+            <li data-day="88"><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Krankenkasse<span class="tag">Tag 61–90</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Laufband ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Job-Zusage</span><span class="marquee-item">Wohnung</span><span class="marquee-item">Anmeldung</span><span class="marquee-item">Krankenkasse</span><span class="marquee-item">90 Tage</span>
+        <span class="marquee-item">Job-Zusage</span><span class="marquee-item">Wohnung</span><span class="marquee-item">Anmeldung</span><span class="marquee-item">Krankenkasse</span><span class="marquee-item">90 Tage</span>
+        <span class="marquee-item">Job-Zusage</span><span class="marquee-item">Wohnung</span><span class="marquee-item">Anmeldung</span><span class="marquee-item">Krankenkasse</span><span class="marquee-item">90 Tage</span>
+        <span class="marquee-item">Job-Zusage</span><span class="marquee-item">Wohnung</span><span class="marquee-item">Anmeldung</span><span class="marquee-item">Krankenkasse</span><span class="marquee-item">90 Tage</span>
+      </div>
+    </div>
+
+    <!-- ===== Wen wir ablehnen ===== -->
+    <section class="section" id="fuer-wen">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Wen wir ablehnen</span>
+          <h2>Wir arbeiten mit Menschen, die entschieden haben. Nicht mit Menschen, die überlegen.</h2>
+        </div>
+
+        <div class="fit-grid">
+          <article class="card fit-card fit-yes reveal spotlight">
+            <h3><span class="fit-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Dafür ist der Platz gedacht</h3>
+            <ul class="fit-list">
+              <li>Die Entscheidung ist gefallen, es geht nur noch um das Wie.</li>
+              <li>Dein Zeitfenster liegt innerhalb der nächsten zwölf Monate.</li>
+              <li>Partner und Familie sind an Bord.</li>
+              <li>Du hast Rücklagen für Kaution, Umzug und die ersten Wochen.</li>
+            </ul>
+          </article>
+          <article class="card fit-card fit-no reveal spotlight" style="--d:.1s">
+            <h3><span class="fit-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg></span>Dann bitte nicht bewerben</h3>
+            <ul class="fit-list">
+              <li>Du willst erst herausfinden, ob die Schweiz überhaupt etwas für dich ist.</li>
+              <li>Dein Zeitfenster liegt weiter als zwölf Monate entfernt.</li>
+              <li>Du hast keine Startliquidität für Kaution und Übergang.</li>
+              <li>Du suchst eine Abkürzung ohne eigenen Aufwand.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="note reveal">
+          <strong>Eugen und Johannes führen die Begleitung selbst, die Zahl der Plätze ist dadurch begrenzt.</strong>
+          Ein Platz, der an einen Unentschlossenen geht, fehlt jemandem, der ihn nutzt.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Kriterien ===== -->
+    <section class="section section-alt" id="kriterien">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Der Aufnahme-Check</span>
+          <h2>Was im Aufnahme-Check geprüft wird</h2>
+          <p class="section-lead">Drei Kriterien, 30 Minuten. Das Gesamturteil ist die strengste Einzelbewertung, ein starkes Kriterium hebt ein hartes Nein nicht auf.</p>
+        </div>
+
+        <div class="criteria-grid">
+          <article class="card reveal spotlight">
+            <div class="crit-letter">A</div>
+            <h3>Marktfähigkeit</h3>
+            <p>Ist dein Beruf in der Schweiz gefragt? Brauchst du eine Anerkennung über SRK oder MEBEKO? Dazu deine Lohn-Realität, ehrlich gerechnet: brutto zu netto, Quellensteuer, Krankenkasse. Als Aufenthalter, Grenzgänger oder Wochenaufenthalter kommen dabei grundverschiedene Zahlen heraus.</p>
+          </article>
+          <article class="card reveal spotlight" style="--d:.1s">
+            <div class="crit-letter">B</div>
+            <h3>Tragfähigkeit</h3>
+            <p>Reicht deine Startliquidität für die realen Anlaufkosten? Mietkaution von bis zu drei Monatsmieten, Umzug, Doppelmiete im Übergang, Puffer bis zum ersten Schweizer Lohn. Am Ende steht eine konkrete Summe, die du brauchst.</p>
+          </article>
+          <article class="card reveal spotlight" style="--d:.2s">
+            <div class="crit-letter">C</div>
+            <h3>Umsetzungsfähigkeit</h3>
+            <p>Zeitfenster, Entscheidungsstand, Partner an Bord, verfügbare Stunden pro Woche. Und der Wohnungsmarkt deiner Zielregion: was ohne Schweizer Referenz und Betreibungsauszug tatsächlich passiert.</p>
+          </article>
+        </div>
+
+        <div class="verdicts">
+          <div class="verdict v-green reveal"><span class="light"></span><div><strong>Freigabe</strong><span>Kriterien erfüllt, wir nehmen dich auf.</span></div></div>
+          <div class="verdict v-amber reveal" style="--d:.1s"><span class="light"></span><div><strong>Freigabe unter Auflage</strong><span>Geeignet, aber ein Punkt muss vorher geklärt werden. Wir benennen ihn.</span></div></div>
+          <div class="verdict v-red reveal" style="--d:.2s"><span class="light"></span><div><strong>Noch nicht geeignet</strong><span>Mit Begründung und der Bedingung, unter der eine erneute Prüfung Sinn ergibt.</span></div></div>
+        </div>
+
+        <p class="note reveal">
+          <strong>Nicht die Bewilligung ist der Engpass:</strong> Als Deutscher oder Österreicher fällst du unter das Freizügigkeitsabkommen, mit einem Arbeitsvertrag über einem Jahr ist die B-Bewilligung Formsache. Der Engpass ist Job und Wohnung. Genau darauf ist das Programm gebaut.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Begleitung ===== -->
+    <section class="section" id="begleitung">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Das Programm</span>
+          <h2>Was die Begleitung umfasst</h2>
+          <p class="section-lead">Drei Phasen à 30 Tage.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-rail" aria-hidden="true"><span id="rail-fill"></span></div>
+
+          <article class="phase card open reveal">
+            <span class="phase-node">1</span>
+            <button class="phase-toggle" aria-expanded="true" aria-controls="phase-1">
+              <span class="phase-titles"><h3>Phase 1 — Fundament</h3><p>Klarheit, Zahlen und die richtige Ausgangsbasis</p></span>
+              <span class="phase-days">Tag 1–30</span>
+              <span class="phase-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg></span>
+            </button>
+            <div class="phase-body" id="phase-1"><div>
+              <ul class="phase-items">
+                <li><strong>Standortbestimmung</strong>Grenzgänger, Aufenthalter oder Wochenaufenthalter, was wirklich zu dir passt.</li>
+                <li><strong>Die echte Lohn-Realität</strong>Brutto → Netto, Quellensteuer, Krankenkasse. Was am Ende auf deinem Konto landet.</li>
+                <li><strong>Der CH-taugliche Lebenslauf &amp; Bewerbung</strong>Die entscheidenden Unterschiede DE → CH.</li>
+                <li><strong>Aufenthaltsbewilligung &amp; Recht</strong>B/L/G-Bewilligung, EU/EFTA, verständlich erklärt.</li>
+              </ul>
+            </div></div>
+          </article>
+
+          <article class="phase card reveal">
+            <span class="phase-node">2</span>
+            <button class="phase-toggle" aria-expanded="false" aria-controls="phase-2">
+              <span class="phase-titles"><h3>Phase 2 — Job holen</h3><p>Bewerbung, Netzwerk und das Schweizer Gehalt</p></span>
+              <span class="phase-days">Tag 31–60</span>
+              <span class="phase-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg></span>
+            </button>
+            <div class="phase-body" id="phase-2"><div>
+              <ul class="phase-items">
+                <li><strong>Bewerbungsstrategie &amp; Jobkanäle</strong>Personalvermittler, Direktbewerbung, wo die guten Stellen wirklich vergeben werden.</li>
+                <li><strong>Netzwerk &amp; Active Sourcing</strong>LinkedIn und Firmen direkt ansprechen.</li>
+                <li><strong>Das Schweizer Vorstellungsgespräch</strong>Ablauf und Gehaltsverhandlung.</li>
+                <li><strong>Arbeitsvertrag verstehen</strong>Kündigungsfristen, 13. Monatslohn, BVG. Worauf du achten musst.</li>
+              </ul>
+            </div></div>
+          </article>
+
+          <article class="phase card reveal">
+            <span class="phase-node">3</span>
+            <button class="phase-toggle" aria-expanded="false" aria-controls="phase-3">
+              <span class="phase-titles"><h3>Phase 3 — Ankommen</h3><p>Wohnung, Behörden und wirklich Fuß fassen</p></span>
+              <span class="phase-days">Tag 61–90</span>
+              <span class="phase-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg></span>
+            </button>
+            <div class="phase-body" id="phase-3"><div>
+              <ul class="phase-items">
+                <li><strong>Wohnung finden</strong>Der harte CH-Markt, die Bewerbungsmappe und die Frage der Kaution.</li>
+                <li><strong>Krankenkasse &amp; Versicherungen</strong>Richtig wählen und wechseln.</li>
+                <li><strong>Anmeldung, Behörden &amp; Steuern</strong>Schritt für Schritt.</li>
+                <li><strong>Finanzen &amp; Umzug</strong>Konto, Geldtransfer, Umzug.</li>
+              </ul>
+            </div></div>
+          </article>
+        </div>
+
+        <div class="included">
+          <div class="inc reveal"><div class="inc-num" data-count="12">12</div><p><strong>Module als Videokurs</strong></p></div>
+          <div class="inc reveal" style="--d:.08s"><div class="inc-num" data-count="3">3</div><p><strong>persönliche 1:1-Calls</strong> à rund 45 Minuten</p></div>
+          <div class="inc reveal" style="--d:.16s"><div class="inc-num icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><p>Das <strong>Vorlagen-Paket</strong></p></div>
+          <div class="inc reveal" style="--d:.24s"><div class="inc-num icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.4.2 4 1.8 4.5 4.8"/></svg></div><p>Zugang zur <strong>Community</strong></p></div>
+        </div>
+
+        <div class="guarantee reveal">
+          <div class="shield" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg></div>
+          <div>
+            <h3>Umsetzungs-Garantie</h3>
+            <p>Wenn du alle drei Calls wahrgenommen hast und nach 90 Tagen keine Job-Zusage vorliegt, begleiten wir dich kostenlos weiter. <strong>Wir zahlen kein Geld zurück, wir arbeiten weiter.</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Preis ===== -->
+    <section class="section section-alt" id="preis">
+      <div class="container price-wrap">
+        <div class="reveal">
+          <span class="section-kicker">Der Preis</span>
+          <h2>Er steht hier, damit wir ihn im Aufnahme-Check nicht mehr besprechen müssen.</h2>
+          <p class="price-warn">Wenn dieser Betrag für dich ein Problem ist, ist das bereits eine Antwort auf Kriterium B. Dann beantrage den Aufnahme-Check bitte nicht.</p>
+        </div>
+        <div class="price-card reveal tilt" style="--d:.1s">
+          <div class="price-switch" role="group" aria-label="Zahlungsart">
+            <span class="pill" aria-hidden="true"></span>
+            <button type="button" data-plan="once" aria-pressed="true">Einmalig</button>
+            <button type="button" data-plan="rates" aria-pressed="false">In 3 Raten</button>
+          </div>
+          <div class="price-amount" aria-live="polite"><span id="price-prefix"></span><span id="price-value">1.950</span><small>CHF</small></div>
+          <p class="price-sub" id="price-sub">einmalig · oder 3 × 690 CHF, insgesamt 2.070 CHF</p>
+          <a class="btn btn-primary btn-lg magnetic" href="#bewerben">Aufnahme-Check beantragen <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Formular ===== -->
+    <section class="section" id="bewerben">
+      <div class="container apply">
+        <div class="section-head reveal">
+          <span class="section-kicker">Bewerbung</span>
+          <h2>Aufnahme-Check beantragen</h2>
+          <p class="section-lead">Wir lesen jeden Antrag. Nimm dir Zeit für vollständige Antworten, knappe Angaben führen zur Ablehnung ohne Termin.</p>
+        </div>
+
+        <div class="form-shell reveal">
+          <div class="stepper" aria-hidden="true">
+            <div class="stepper-item current"><div class="stepper-bar"><span></span></div><span class="stepper-label">1 · Zeitfenster</span></div>
+            <div class="stepper-item"><div class="stepper-bar"><span></span></div><span class="stepper-label">2 · Ausgangslage</span></div>
+            <div class="stepper-item"><div class="stepper-bar"><span></span></div><span class="stepper-label">3 · Kontakt</span></div>
+          </div>
+
+          <form id="apply-form" novalidate>
+            <!-- Schritt 1 -->
+            <div class="step active" data-step="1">
+              <h3>Dein Zeitfenster</h3>
+              <p class="step-intro">Zwei Fragen, die über Kriterium C entscheiden.</p>
+
+              <fieldset class="q">
+                <legend>Wann willst du in der Schweiz arbeiten?</legend>
+                <div class="options cols-2">
+                  <label class="opt"><input type="radio" name="zeitfenster" value="Innerhalb von 3 Monaten" required /><span>Innerhalb von 3 Monaten</span></label>
+                  <label class="opt"><input type="radio" name="zeitfenster" value="In 3 bis 6 Monaten" /><span>In 3 bis 6 Monaten</span></label>
+                  <label class="opt"><input type="radio" name="zeitfenster" value="In 6 bis 12 Monaten" /><span>In 6 bis 12 Monaten</span></label>
+                  <label class="opt"><input type="radio" name="zeitfenster" value="Später als 12 Monate" data-stop /><span>Später als 12 Monate</span></label>
+                </div>
+                <div class="hint" data-hint-for="zeitfenster"><div><p>Dann ist es für den Aufnahme-Check zu früh. Melde dich wieder, wenn dein Zeitfenster näher rückt.</p></div></div>
+              </fieldset>
+
+              <fieldset class="q">
+                <legend>Ist die Entscheidung gefallen?</legend>
+                <div class="options">
+                  <label class="opt"><input type="radio" name="entscheidung" value="Ja, ich gehe. Es geht nur noch um das Wie." required /><span>Ja, ich gehe. Es geht nur noch um das Wie.</span></label>
+                  <label class="opt"><input type="radio" name="entscheidung" value="Ich entscheide in den nächsten Wochen." /><span>Ich entscheide in den nächsten Wochen.</span></label>
+                  <label class="opt"><input type="radio" name="entscheidung" value="Ich informiere mich nur." data-stop /><span>Ich informiere mich nur.</span></label>
+                </div>
+                <div class="hint" data-hint-for="entscheidung"><div><p>Der Aufnahme-Check ist keine Informationsveranstaltung. Hör so lange in den Podcast rein.</p></div></div>
+              </fieldset>
+
+              <p class="form-error" role="alert">Bitte beantworte beide Fragen.</p>
+              <div class="form-nav">
+                <span class="spacer"></span>
+                <button type="button" class="btn btn-primary" data-next>Weiter <span class="arrow">→</span></button>
+              </div>
+            </div>
+
+            <!-- Schritt 2 -->
+            <div class="step" data-step="2">
+              <h3>Deine Ausgangslage</h3>
+              <p class="step-intro">Grundlage für Kriterium A und B. Ohne diese Angaben können wir nicht prüfen.</p>
+
+              <div class="field">
+                <label for="beruf">Beruf, Qualifikation und aktuelles Bruttojahresgehalt</label>
+                <input class="input" id="beruf" name="beruf" type="text" required minlength="10" placeholder="z.B. Pflegefachfrau, 8 Jahre Erfahrung, 46.000 € brutto" />
+              </div>
+
+              <fieldset class="q">
+                <legend>Welche Mittel stehen dir für Kaution, Umzug und die ersten zwei Monate zur Verfügung?</legend>
+                <div class="options cols-3">
+                  <label class="opt"><input type="radio" name="mittel" value="Unter 5.000 CHF" required /><span>Unter 5.000 CHF</span></label>
+                  <label class="opt"><input type="radio" name="mittel" value="5.000 bis 15.000 CHF" /><span>5.000 bis 15.000 CHF</span></label>
+                  <label class="opt"><input type="radio" name="mittel" value="Über 15.000 CHF" /><span>Über 15.000 CHF</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="q">
+                <legend>Das Programm kostet 1.950 CHF. Kannst du diesen Betrag bei einer Freigabe aufbringen?</legend>
+                <div class="options cols-3">
+                  <label class="opt"><input type="radio" name="programm" value="Ja" required /><span>Ja</span></label>
+                  <label class="opt"><input type="radio" name="programm" value="Ja, in drei Raten" /><span>Ja, in drei Raten</span></label>
+                  <label class="opt"><input type="radio" name="programm" value="Nein" data-stop /><span>Nein</span></label>
+                </div>
+                <div class="hint" data-hint-for="programm"><div><p>Dann ist der Aufnahme-Check der falsche Termin. Wer die 1.950 CHF nicht aufbringen kann, kann in aller Regel auch Kaution und Übergang nicht stemmen.</p></div></div>
+              </fieldset>
+
+              <div class="field">
+                <label for="stolperstein">Was ist aktuell dein größter Stolperstein?</label>
+                <textarea class="input" id="stolperstein" name="stolperstein" required minlength="20" data-counter="80" placeholder="Je konkreter, desto besser."></textarea>
+                <span class="counter" aria-hidden="true"></span>
+              </div>
+
+              <p class="form-error" role="alert">Bitte fülle alle Angaben vollständig aus.</p>
+              <div class="form-nav">
+                <button type="button" class="btn btn-ghost" data-prev>← Zurück</button>
+                <button type="button" class="btn btn-primary" data-next>Weiter <span class="arrow">→</span></button>
+              </div>
+            </div>
+
+            <!-- Schritt 3 -->
+            <div class="step" data-step="3">
+              <h3>Wohin dürfen wir uns melden?</h3>
+              <p class="step-intro">Im Anschluss wählst du deinen Termin für den Aufnahme-Check.</p>
+
+              <div class="fields-2">
+                <div class="field">
+                  <label for="vorname">Vorname</label>
+                  <input class="input" id="vorname" name="vorname" type="text" autocomplete="given-name" required />
+                </div>
+                <div class="field">
+                  <label for="email">E-Mail</label>
+                  <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="telefon">Telefon / WhatsApp</label>
+                  <input class="input" id="telefon" name="telefon" type="tel" autocomplete="tel" required />
+                </div>
+                <div class="field">
+                  <label for="erreichbar">Wann bist du am besten erreichbar?</label>
+                  <input class="input" id="erreichbar" name="erreichbar" type="text" placeholder="z.B. werktags ab 18 Uhr" />
+                </div>
+              </div>
+
+              <p class="form-error" role="alert">Bitte prüfe Vorname, E-Mail und Telefon.</p>
+              <div class="form-nav">
+                <button type="button" class="btn btn-ghost" data-prev>← Zurück</button>
+                <button type="submit" class="btn btn-primary">Antrag absenden <span class="arrow">→</span><span class="spinner" aria-hidden="true"></span></button>
+              </div>
+              <p class="privacy">Deine Daten behandeln wir vertraulich und geben sie nicht weiter.</p>
+            </div>
+          </form>
+
+          <!-- Ergebnis A -->
+          <div class="result result-ok" id="result-ok" tabindex="-1">
+            <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+            <h3>Dein Antrag ist da. Die Vorprüfung ist bestanden.</h3>
+            <p>Wähl jetzt deinen Termin für den Aufnahme-Check. 30 Minuten, drei Kriterien, am Ende eine Bewertung.</p>
+            <div id="calendar-slot"></div>
+            <p class="small">Falls das Kalender-Fenster nicht lädt: Dein Antrag ist bei uns. Wir melden uns per Mail mit einem Terminvorschlag.</p>
+          </div>
+
+          <!-- Ergebnis B -->
+          <div class="result result-no" id="result-no" tabindex="-1">
+            <div class="result-icon">–</div>
+            <h3>Wir vergeben dir jetzt keinen Termin.</h3>
+            <p>Das ist keine Absage für immer. Ändert sich dein Zeitfenster, deine Entscheidung oder deine finanzielle Lage, bewirb dich erneut. Bis dahin bekommst du alles Öffentliche: Podcast, Newsletter und die Inhalte auf unseren Kanälen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq">
+        <div class="section-head reveal">
+          <span class="section-kicker">FAQ</span>
+          <h2>Häufige Fragen</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Was kostet der Aufnahme-Check?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Nichts. Er ist keine Beratung, sondern eine Prüfung, und dauert 30 Minuten. Du gehst in jedem Fall mit einer ehrlichen Einschätzung deiner Lage heraus, auch wenn wir dich nicht aufnehmen.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Warum muss ich mich überhaupt bewerben?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Weil Eugen und Johannes die Begleitung selbst führen und die Zahl der Plätze dadurch begrenzt ist. Der Antrag sorgt dafür, dass die Gespräche mit den Menschen stattfinden, bei denen der Weg in 90 Tagen tatsächlich funktioniert.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Was kostet die Begleitung?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>1.950 CHF einmalig oder 3 × 690 CHF, insgesamt 2.070 CHF. Der Preis steht vor dem Gespräch fest und wird im Gespräch nicht verhandelt.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Was passiert, wenn ihr mich nicht aufnehmt?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Du bekommst die Begründung und die Bedingung, unter der eine erneute Prüfung Sinn ergibt. In den meisten Fällen ist es das Zeitfenster oder die Liquidität, beides ändert sich.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Garantiert ihr mir einen Job?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Nein. Garantiert ist die Weiterbegleitung: Hast du alle drei Calls wahrgenommen und liegt nach 90 Tagen keine Job-Zusage vor, begleiten wir dich kostenlos weiter. Geld zurück gibt es nicht.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Brauche ich vorher eine Aufenthaltsbewilligung?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Nein. Als Deutscher oder Österreicher fällst du unter das Freizügigkeitsabkommen, mit einem Arbeitsvertrag über einem Jahr ist die B-Bewilligung Formsache. Der Schwerpunkt liegt deshalb auf Job und Wohnung.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Abschluss ===== -->
+    <section class="section final-cta">
+      <div class="container reveal">
+        <h2>In 90 Tagen in die Schweiz.</h2>
+        <p class="section-lead">30 Minuten Aufnahme-Check. Drei Kriterien. Eine ehrliche Bewertung.</p>
+        <a class="btn btn-primary btn-lg magnetic" href="#bewerben">Aufnahme-Check beantragen <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Lebenplus · Auswandern &amp; Leben in der Schweiz</span>
+      <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></nav>
+    </div>
+  </footer>
+
+  <div class="sticky-cta"><a class="btn btn-primary" href="#bewerben">Aufnahme-Check beantragen <span class="arrow">→</span></a></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
