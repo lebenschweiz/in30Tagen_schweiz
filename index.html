@@ -17,9 +17,10 @@
   <meta property="og:url" content="https://lebenplus-community.ch/bewerbung" />
   <meta property="og:image" content="https://lebenplus-community.ch/og-image.jpg" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" href="favicon-180.png" />
   <link rel="stylesheet" href="styles.css" />
 
   <script>
@@ -40,16 +41,18 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="./" aria-label="Lebenplus Startseite">
-        <img src="wordmark.png" alt="Lebenplus" onerror="this.replaceWith(document.getElementById('brand-fallback').content.cloneNode(true))" />
+        <img src="wordmark.png" alt="Lebenplus" />
       </a>
-      <template id="brand-fallback"><span class="brand-mark" aria-hidden="true">+</span><span class="brand-text">Leben<span>plus</span></span></template>
       <a class="btn btn-primary btn-sm magnetic" href="#bewerben">Aufnahme-Check beantragen <span class="arrow">→</span></a>
     </div>
   </header>
 
   <main>
     <!-- ===== Hero ===== -->
-    <section class="hero">
+    <section class="hero has-video">
+      <video class="bg-video" muted loop playsinline preload="none" poster="media/hero_poster.jpg"
+        data-src="media/hero.mp4" data-src-portrait="media/hero_portrait.mp4" data-poster-portrait="media/hero_poster_portrait.jpg" aria-hidden="true"></video>
+      <div class="bg-video-overlay" aria-hidden="true"></div>
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div>
@@ -455,7 +458,10 @@
     </section>
 
     <!-- ===== Abschluss ===== -->
-    <section class="section final-cta">
+    <section class="section final-cta has-video">
+      <video class="bg-video" muted loop playsinline preload="none" poster="media/hero_poster.jpg"
+        data-src="media/hero.mp4" data-src-portrait="media/hero_portrait.mp4" data-poster-portrait="media/hero_poster_portrait.jpg" aria-hidden="true"></video>
+      <div class="bg-video-overlay" aria-hidden="true"></div>
       <div class="container reveal">
         <h2>In 90 Tagen in die Schweiz.</h2>
         <p class="section-lead">30 Minuten Aufnahme-Check. Drei Kriterien. Eine ehrliche Bewertung.</p>
